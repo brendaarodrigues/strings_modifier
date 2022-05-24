@@ -13,9 +13,9 @@ Para reduzir a string, siga o seguinte modelo:
 
 # Exemplos
 
-'cabbac' -> 'bbbac' -> 'bbcc' -> 'bac' -> 'cc'
-'aabc' -> 'acc' -> 'bc' -> 'a'
-'abc' -> 'cc' 
+- 'cabbac' -> 'bbbac' -> 'bbcc' -> 'bac' -> 'cc'
+- 'aabc' -> 'acc' -> 'bc' -> 'a'
+- 'abc' -> 'cc' 
 
 # Exibição do resultado
 
