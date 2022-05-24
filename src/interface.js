@@ -16,8 +16,8 @@ async function myInterface(){
             readlines.close()
           return resolve(response.toLowerCase())
         })
-      );
-    });
+      )
+    })
   }
   
 
