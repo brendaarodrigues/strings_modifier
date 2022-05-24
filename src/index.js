@@ -1,10 +1,7 @@
-import express from 'express'
 import myInterface from './interface.js'
 import verifyString from './verify.js'
 import replaceChar from './replace.js'
 import validateString from './valid.js'
-
-const app = express()
 
 async function reduceStrings() {
   var string = await myInterface()
