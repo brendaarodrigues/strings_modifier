@@ -5,6 +5,7 @@ function replaceChar(string) {
     if (string.includes("bc")) return string.replace("bc", "a");
     if (string.includes("ca")) return string.replace("ca", "b");
     if (string.includes("cb")) return string.replace("cb", "a");
+
   }
 
 export default replaceChar

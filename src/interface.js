@@ -1,7 +1,4 @@
-import read from 'fs'
-import resolve from 'path'
 import readline from 'readline'
-import createInterface from 'readline'
 
 async function myInterface(){
 
@@ -16,8 +13,8 @@ async function myInterface(){
             readlines.close()
           return resolve(response.toLowerCase())
         })
-      );
-    });
+      )
+    })
   }
   
 

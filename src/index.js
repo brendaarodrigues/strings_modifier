@@ -1,14 +1,10 @@
-import express from 'express'
 import myInterface from './interface.js'
-import verifyString from './verify.js'
-import replaceChar from './replace.js'
-import validateString from './valid.js'
-
-const app = express()
+import validateString from './validate.js'
+import loop from './replaceLoop.js'
 
 async function reduceStrings() {
-  var string = await myInterface()
-  var modifiedString = string
+  let string = await myInterface()
+  let modifiedString = ''
   const regex = /[^a-c]/
 
   const isValid = validateString(string, regex)
@@ -16,9 +12,8 @@ async function reduceStrings() {
   if(!isValid){
     console.log("Não são permitidas strings com letras além de 'a', 'b' e 'c'.")
   }else{
-    while (verifyString(modifiedString)) {
-        modifiedString = replaceChar(modifiedString)
-    }
+   
+    modifiedString = loop(string)
     console.log(`String Original: ${string}`)
     console.log(`String modificada: ${modifiedString}`)
     console.log(`Tamanho da string modificada: ${modifiedString.length}`)
@@ -29,4 +24,4 @@ async function reduceStrings() {
 
 reduceStrings()
 
-
+export default reduceStrings
